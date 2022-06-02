@@ -12,6 +12,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.seccionEncuadrado--grande {
+  width: 600px;
+  background-color: #f0cfa3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
+.seccionEncuadrado--mediano {
+  width: 270px;
+  background-color: #f0cfa3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
+.seccionEncuadrado--chico {
+  width: 120px;
+  background-color: #f0cfa3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px; }
+
 body {
   background-color: burlywood; }
 
@@ -25,13 +55,13 @@ header {
     background-color: azure; }
 
 .logo1 {
-  width: 300px;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .logo2 {
   display: none;
-  width: 300px;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .navegacion ul {
   margin: 0;
@@ -51,8 +81,8 @@ header {
 .redes__sociales {
   padding: 0; }
   .redes__sociales img {
-    width: 50px;
-    height: 50px; }
+    height: 50px;
+    width: 50px; }
 
 /*main general*/
 .seccion__titulo {
@@ -60,23 +90,14 @@ header {
   text-align: center;
   font-size: 30px; }
 
-.seccion__encuadrado {
-  background-color: #f0cfa3;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  width: 270px;
-  height: 400px;
-  margin: 10px;
+.seccionEncuadrado--mediano a {
+  background-color: #c0b659;
+  color: #442c0e;
+  padding: 15px 20px;
+  display: block;
   text-align: center;
-  border-radius: 15px; }
-  .seccion__encuadrado a {
-    background-color: #c0b659;
-    color: #442c0e;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 10px 40px;
-    text-decoration: none; }
+  margin: 10px 40px;
+  text-decoration: none; }
 
 .seccion__encuadrado:hover {
   background-color: antiquewhite;
@@ -90,19 +111,19 @@ header {
   border-radius: 15px 15px 0 0; }
 
 .img-1 {
-  background-image: url(../imagenes/viaje-1.png);
+  background-image: url(../imagenes/viajeCaribe-1.png);
   background-size: cover; }
 
 .img-2 {
-  background-image: url(../imagenes/viaje-2.png);
+  background-image: url(../imagenes/viajeROMA-2.png);
   background-size: cover; }
 
 .img-3 {
-  background-image: url(../imagenes/viaje-3.png);
+  background-image: url(../imagenes/viajeParis-3.png);
   background-size: cover; }
 
 .img-4 {
-  background-image: url(../imagenes/viaje-4.png);
+  background-image: url(../imagenes/viajeBerlin-4.png);
   background-size: cover; }
 
 .seccion__encuadrado img {
@@ -158,8 +179,8 @@ footer {
   text-align: center; }
 
 footer img {
-  width: 100px;
-  height: 100px; }
+  height: 100px;
+  width: 100px; }
 
 /*footer formulario*/
 .footer__formulario {
@@ -200,8 +221,8 @@ footer img {
   font-size: 16px; }
 
 form {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 /*media querys*/
 @media (max-width: 788px) {

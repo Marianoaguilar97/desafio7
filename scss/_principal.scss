@@ -4,6 +4,34 @@ $fuenteChica: 10px;
 $fuenteMediana: 12px;
 $fuenteGrande: 16px;
 
+$ancho: (
+	grande: 300px,
+	mediano: 135px,
+	chico: 60px,
+);
+
+@each $medida, $pixel in $ancho {
+	.seccionEncuadrado--#{$medida} {
+		width: ($pixel)*2;
+		background-color: rgb(240, 207, 163);
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-size: ($fuenteMediana)-2;
+	 height: 400px;
+	 margin: 10px;
+ 	text-align: center;
+	 border-radius: 15px;
+	}
+
+
+}
+
+@mixin tamaño($ancho, $alto) {
+	height: $alto;
+	width: $ancho;
+}
+	
+
+
 body {
 	background-color: burlywood;
 }
@@ -22,14 +50,12 @@ body {
  }
 
  .logo1  {
-	width: 300px;
-	height: 300px;
+	@include tamaño(300px,300px )
 }
 
 .logo2  {
 	display: none;
-	width: 300px;
-	height: 300px;
+	@include tamaño(300px,300px )
 }
 .navegacion {
  	 ul {
@@ -55,8 +81,7 @@ body {
 	 padding: 0;
 
  	img {
- 	width: 50px;
-	height: 50px;
+ 	@include tamaño(50px,50px )
  	}
  }
  /*main general*/
@@ -67,15 +92,7 @@ body {
  	font-size: 30px;
  }
 
- .seccion__encuadrado {
- 	background-color: rgb(240, 207, 163);
- 	font-family: 'Montserrat', sans-serif;
- 	font-size: $fuenteMediana;
-	 width: 270px;
-	 height: 400px;
-	 margin: 10px;
- 	text-align: center;
-	 border-radius: 15px;
+ .seccionEncuadrado--mediano {
 
      a {
 	background-color: rgb(192, 182, 89);
@@ -102,22 +119,22 @@ body {
 }
 
 .img-1 {
-	background-image: url(../imagenes/viaje-1.png);
+	background-image: url(../imagenes/viajeCaribe-1.png);
 	background-size: cover;
 }
 
 .img-2 {
-	background-image: url(../imagenes/viaje-2.png);
+	background-image: url(../imagenes/viajeROMA-2.png);
 	background-size: cover;
 }
 
 .img-3 {
-	background-image: url(../imagenes/viaje-3.png);
+	background-image: url(../imagenes/viajeParis-3.png);
 	background-size: cover;
 }
 
 .img-4 {
-	background-image: url(../imagenes/viaje-4.png);
+	background-image: url(../imagenes/viajeBerlin-4.png);
 	background-size: cover;
 }
 
@@ -185,8 +202,7 @@ body {
 }
  
  footer img {
- 	width: 100px;
- 	height: 100px;
+ 	@include tamaño(100px,100px )
  }
 
  /*footer formulario*/
@@ -236,6 +252,5 @@ body {
  }
 
  form {
- 	width: 100%;
- 	height: 100%
+ 	@include tamaño(100%,100%)
  }
