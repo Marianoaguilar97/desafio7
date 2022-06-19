@@ -111,19 +111,19 @@ header {
   border-radius: 15px 15px 0 0; }
 
 .img-1 {
-  background-image: url(../imagenes/viajeCaribe-1.png);
+  background-image: url(../imagenes/caribe.png);
   background-size: cover; }
 
 .img-2 {
-  background-image: url(../imagenes/viajeROMA-2.png);
+  background-image: url(../imagenes/roma.png);
   background-size: cover; }
 
 .img-3 {
-  background-image: url(../imagenes/viajeParis-3.png);
+  background-image: url(../imagenes/paris.png);
   background-size: cover; }
 
 .img-4 {
-  background-image: url(../imagenes/viajeBerlin-4.png);
+  background-image: url(../imagenes/berlin.png);
   background-size: cover; }
 
 .seccion__encuadrado img {
